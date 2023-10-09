@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "15770358983",
+    "project_id": "chatapp-f0946",
+    "storage_bucket": "chatapp-f0946.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15770358983:android:501667ff1a0bd1d858dae2",
+        "android_client_info": {
+          "package_name": "com.omidavz.chatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBHSFyzF-irEjeijbbP0Gyvhim2RpUoo8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

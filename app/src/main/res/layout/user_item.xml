@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="users"
+            type="com.omidavz.chatapp.model.Users" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            >
+            <ImageView
+                android:id="@+id/profilePicture_item_IV"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:scaleType="center"
+
+                android:src="@drawable/ic_launcher_foreground"
+                />
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/username_item_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{users.username}"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.074"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.22000003" />
+
+        <ImageView
+            android:id="@+id/statusImageOnline"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/username_item_TV"
+            app:layout_constraintTop_toBottomOf="@+id/username_item_TV"
+            app:layout_constraintVertical_bias="0.22"
+            android:background="@drawable/shape_online"/>
+
+        <ImageView
+            android:id="@+id/statusImageOffline"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/username_item_TV"
+            app:layout_constraintTop_toBottomOf="@+id/username_item_TV"
+            app:layout_constraintVertical_bias="0.22"
+            android:background="@drawable/shape_offline"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
